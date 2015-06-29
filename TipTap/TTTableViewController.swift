@@ -10,6 +10,9 @@ import UIKit
 
 class TTTableViewController: UITableViewController {
     
+    var reuseIdentifier: String = ""
+    let billCell: TTBillTableViewCell = TTBillTableViewCell()
+    
     enum tipCellType {
         case BillTableViewCell
         case TipTableViewCell
@@ -26,6 +29,10 @@ class TTTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.estimatedRowHeight = 44.0
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        
+        self.tableView.registerClass(TTBillTableViewCell.self, forCellReuseIdentifier: "BillCell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,15 +54,32 @@ class TTTableViewController: UITableViewController {
         return 5
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        
+        var cell: UITableViewCell!
+        var cellID: String?
+        
+        switch (indexPath.row) {
+        case 0:
+            cellID = "BillCell"
+        default:
+            break
+        }
 
         // Configure the cell...
-
+        switch (indexPath.row) {
+        case 0:
+            cell = billCell
+        default:
+            break
+        }
+        
+        
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

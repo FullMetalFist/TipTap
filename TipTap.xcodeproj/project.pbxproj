@@ -12,9 +12,10 @@
 		7C629AF21B39BC7500A83CFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C629AF11B39BC7500A83CFF /* Images.xcassets */; };
 		7C629AF51B39BC7500A83CFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C629AF31B39BC7500A83CFF /* LaunchScreen.xib */; };
 		7C629B011B39BC7500A83CFF /* TipTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C629B001B39BC7500A83CFF /* TipTapTests.swift */; };
-		7CFE861B1B3EFCE3008E194E /* TTTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE861A1B3EFCE3008E194E /* TTTableViewController.swift */; };
-		7CFE861D1B3EFD21008E194E /* TTNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE861C1B3EFD21008E194E /* TTNavController.swift */; };
-		7CFE861F1B3EFF71008E194E /* TTBillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE861E1B3EFF71008E194E /* TTBillTableViewCell.swift */; };
+		7CFE86241B3FA171008E194E /* TTExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE86211B3F9E10008E194E /* TTExtensions.swift */; };
+		7CFE86251B3FA176008E194E /* TTNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE861C1B3EFD21008E194E /* TTNavController.swift */; };
+		7CFE86261B3FA179008E194E /* TTBillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE861E1B3EFF71008E194E /* TTBillTableViewCell.swift */; };
+		7CFE86271B3FA17C008E194E /* TTTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFE861A1B3EFCE3008E194E /* TTTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		7CFE861A1B3EFCE3008E194E /* TTTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTTableViewController.swift; sourceTree = "<group>"; };
 		7CFE861C1B3EFD21008E194E /* TTNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTNavController.swift; sourceTree = "<group>"; };
 		7CFE861E1B3EFF71008E194E /* TTBillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTBillTableViewCell.swift; path = View/TTBillTableViewCell.swift; sourceTree = "<group>"; };
+		7CFE86211B3F9E10008E194E /* TTExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TTExtensions.swift; path = Extensions/TTExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				7C629AEA1B39BC7500A83CFF /* AppDelegate.swift */,
 				7CFE86201B3EFF7A008E194E /* View */,
 				7C629AEC1B39BC7500A83CFF /* ViewController.swift */,
+				7CFE86231B3F9E19008E194E /* Extensions */,
 				7C629AF11B39BC7500A83CFF /* Images.xcassets */,
 				7C629AF31B39BC7500A83CFF /* LaunchScreen.xib */,
 				7C629AE81B39BC7500A83CFF /* Supporting Files */,
@@ -124,6 +127,14 @@
 				7CFE861C1B3EFD21008E194E /* TTNavController.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		7CFE86231B3F9E19008E194E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CFE86211B3F9E10008E194E /* TTExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,10 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C629AED1B39BC7500A83CFF /* ViewController.swift in Sources */,
-				7CFE861F1B3EFF71008E194E /* TTBillTableViewCell.swift in Sources */,
-				7CFE861D1B3EFD21008E194E /* TTNavController.swift in Sources */,
-				7CFE861B1B3EFCE3008E194E /* TTTableViewController.swift in Sources */,
+				7CFE86271B3FA17C008E194E /* TTTableViewController.swift in Sources */,
+				7CFE86241B3FA171008E194E /* TTExtensions.swift in Sources */,
+				7CFE86261B3FA179008E194E /* TTBillTableViewCell.swift in Sources */,
 				7C629AEB1B39BC7500A83CFF /* AppDelegate.swift in Sources */,
+				7CFE86251B3FA176008E194E /* TTNavController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
